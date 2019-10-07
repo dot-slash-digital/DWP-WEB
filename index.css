@@ -1,0 +1,16 @@
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+.about-hours{
+   background: rgba(17, 17, 17, 0.93);
+   color: white;
+   height: 300px;
+   width:250px
+}
+#textbox{
+  height:35px;
+}

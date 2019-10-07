@@ -1,0 +1,18 @@
+.service-paragraph{
+  width: 50%;
+  text-align: center;
+  position:
+  absolute;left: 50%;
+  transform:
+  translate(-50%, -50%);
+}
+
+/* .ft-cards .ft-item span {
+  font-size: 64px !important;
+  color: #111 !important;
+} */
+/* .ft-cards .ft-item a {
+  display: block;
+  text-align: right;
+  color: #999;
+} */

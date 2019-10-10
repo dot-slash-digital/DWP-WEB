@@ -1,3 +1,19 @@
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+.about-hours{
+   background: rgba(17, 17, 17, 0.93);
+   color: white;
+   height: 300px;
+   width:250px
+}
+#textbox{
+  height:35px;
+}
 .service-paragraph{
   width: 50%;
   text-align: center;
@@ -6,13 +22,3 @@
   transform:
   translate(-50%, -50%);
 }
-
-/* .ft-cards .ft-item span {
-  font-size: 64px !important;
-  color: #111 !important;
-} */
-/* .ft-cards .ft-item a {
-  display: block;
-  text-align: right;
-  color: #999;
-} */

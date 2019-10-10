@@ -14,3 +14,11 @@
 #textbox{
   height:35px;
 }
+.service-paragraph{
+  width: 50%;
+  text-align: center;
+  position:
+  absolute;left: 50%;
+  transform:
+  translate(-50%, -50%);
+}

@@ -32,7 +32,7 @@
         <!-- JS -->
         <script src="template_assets/assets/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body id="page-top">
+    <body id="page-top" style="overflow-x: hidden;">
 
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -101,13 +101,18 @@
 
                 <!-- ========== Beginning ========== -->
 
-                  <div class="row section" >
+                  <div class="row section"
+                    style="background-image: url('./1920x900.png');
+                           background-color: lightblue;
+                           background-blend-mode: multiply">
 
                     <div class="col-md-offset-1 col-md-5" style=" padding-left:75px ">
-                      <h2>Stuff</h2>
+                      <h2 style="font-size: 48px">Stuff</h2>
 
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
-                      <p>Lorem ipsum dolor sit amet, </p>
+                      <div style="font-size: 24px">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+                        <p>Lorem ipsum dolor sit amet, </p>
+                      </div>
                     </div>
 
                       <img src="https://via.placeholder.com/150" alt="placeholder" align="right"  style="padding-right:150px">

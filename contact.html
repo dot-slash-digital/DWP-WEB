@@ -117,44 +117,46 @@
 
         <!-- ========== Contact ========== -->
 
-        <section id="contact" style="padding-top: 50px">
-          <!-- Contact Form -->
-          <div style="padding-top:25px; padding-right:150px; padding-left:150px; padding-bottom:25px">
-
-            <div class="form-login">
-
-              <form action=post>
-              <!--Full Name-->
-              <div class="form-group">
-                <input type="text" id="username-login-1" class="form-control" placeholder="Enter your name">
-                <label for="username-login-1">Full Name</label>
+        <section id="contact" class="container" style="padding-top: 50px">
+            <!-- Contact Form -->
+            <div style="padding-top:25px; padding-bottom:25px;
+              position: relative; left: 50%; transform: translateX(-50%); width: 60%;">
+  
+              <div class="form-login">
+  
+                <form action="post">
+  
+                  <div class="row">
+                    <!--Full Name-->
+                    <div class="form-group col-md-6 col-sm-12">
+                      <input type="text" id="full_name" class="form-control" placeholder="Enter your name">
+                      <label for="username-login-1">Full Name</label>
+                    </div>
+                    <!--Phone Number-->
+                    <div class="form-group col-md-6 col-sm-12">
+                      <input type="tel" id="phone_number" class="form-control" placeholder="Enter your phone number">
+                      <label for="pass-login-1">Phone Number</label>
+                    </div>
+                  </div>
+                  <!--Email-->
+                  <div class="form-group">
+                    <input type="email" id="user_email" class="form-control" placeholder="Enter your email">
+                    <label for="pass-login-1">Email</label>
+                  </div>
+                  <!-- Message -->
+                  <div class="form-group">
+                    <textarea name="message" id="contact_message" class="form-control" rows="5" placeholder="Enter your Message"></textarea>
+                    <label for="message-contact-1">Message</label>
+                  </div>
+  
+                <!-- Submit -->
+                <input type="submit" id="submit_button" value="Submit" class="btn" disabled="true">
+  
+                </form>
               </div>
-              <!--Phone Number-->
-              <div class="form-group">
-                <input type="password" id="pass-login-1" class="form-control" placeholder="Enter your password">
-                <label for="pass-login-1">Password</label>
-                <span class="pull-right"><a href="#" class="forget-pass-link">Forget password?</a></span>
-              </div>
-              <!--Email-->
-              <div class="form-group">
-                <input type="password" id="pass-login-1" class="form-control" placeholder="Enter your password">
-                <label for="pass-login-1">Email</label>
-                <span class="pull-right"><a href="#" class="forget-pass-link">Forget password?</a></span>
-              </div>
-              <!-- Message -->
-              <div class="form-group">
-                <textarea name="message" id="message-contact-1" class="form-control" rows="5" placeholder="Your Message"></textarea>
-                <label for="message-contact-1">Message</label>
-              </div>
-
-              <!-- Submit -->
-              <input type="submit" value="Submit" class="btn">
-
-              </form>
-            </div>
-          </div><!-- / .row -->
-        </div><!-- / .container -->
-        </section><!-- / .contact-1 -->
+            </div><!-- / .row -->
+          </div><!-- / .container -->
+          </section><!-- / .contact-1 -->
 
 
                 <!-- ========== Contact ========== -->
@@ -267,5 +269,23 @@
 
         <!-- Definity JS -->
         <script src="template_assets/assets/js/main.js"></script>
+
+        <script>
+          function validateContactForm() {
+            if ($("#full_name").val() != "" &&
+              $("#phone_number").val() != "" &&
+              $("#user_email").val() != "" &&
+              $("#contact_message").val() != "") {
+              $("#submit_button").prop("disabled", false);
+            }
+            else {
+              $("#submit_button").prop("disabled", true);
+            }
+          }
+
+          $(document).ready(function() {
+            $("input,textarea").on("focusout blur input", validateContactForm);
+          });
+        </script>
     </body>
 </html>

@@ -121,26 +121,27 @@
             <!-- Contact Form -->
             <div style="padding-top:25px; padding-bottom:25px;
               position: relative; left: 50%; transform: translateX(-50%); width: 60%;">
-  
+
               <div class="form-login">
-  
-                <form action="post">
-  
+
+                <form id="dwp-web-request-form" action="https://formspree.io/hello@dotslashdigital.com" method="POST">
+                  <fieldset id="fs-frm-inputs">
                   <div class="row">
                     <!--Full Name-->
+
                     <div class="form-group col-md-6 col-sm-12">
-                      <input type="text" id="full_name" class="form-control" placeholder="Enter your name">
+                      <input type="text" id="full_name" name="name" class="form-control" placeholder="Enter your name">
                       <label for="username-login-1">Full Name</label>
                     </div>
                     <!--Phone Number-->
                     <div class="form-group col-md-6 col-sm-12">
-                      <input type="tel" id="phone_number" class="form-control" placeholder="Enter your phone number">
+                      <input type="tel" id="phone_number" name="phoneNumber" class="form-control" placeholder="Enter your phone number">
                       <label for="pass-login-1">Phone Number</label>
                     </div>
                   </div>
                   <!--Email-->
                   <div class="form-group">
-                    <input type="email" id="user_email" class="form-control" placeholder="Enter your email">
+                    <input type="email" id="user_email" name="email" class="form-control" placeholder="Enter your email">
                     <label for="pass-login-1">Email</label>
                   </div>
                   <!-- Message -->
@@ -148,10 +149,10 @@
                     <textarea name="message" id="contact_message" class="form-control" rows="5" placeholder="Enter your Message"></textarea>
                     <label for="message-contact-1">Message</label>
                   </div>
-  
+
                 <!-- Submit -->
                 <input type="submit" id="submit_button" value="Submit" class="btn" disabled="true">
-  
+              </fieldset>
                 </form>
               </div>
             </div><!-- / .row -->

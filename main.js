@@ -34,7 +34,69 @@
 			});
 		}
 
+		$("#submit_button").click(function(e) {
+			let fullName = $("#full_name");
+			let email = $("#user_email");
+			let message = $("#contact_message");
+
+			// Validate input
+			if (!validateFullName(fullName.val()) ||
+				!validateEmail(email.val()) ||
+				!validateMessage(message.val())) {
+				e.preventDefault();
+				alert("Please fill out all required fields.");
+			}
+
+			// Full name is required
+			if (validateFullName(fullName.val())) {
+				fullName.removeClass("is-invalid").addClass("is-valid");
+			}
+			else {
+				fullName.removeClass("is-valid").addClass("is-invalid");
+			}
+
+			// Email is required
+			if (validateEmail(email.val())) {
+				email.removeClass("is-invalid").addClass("is-valid");
+			}
+			else {
+				email.removeClass("is-valid").addClass("is-invalid");
+			}
+
+			// Message is required
+			if (validateMessage(message.val())) {
+				message.removeClass("is-invalid").addClass("is-valid");
+			}
+			else {
+				message.removeClass("is-valid").addClass("is-invalid");
+			}
+		});
+
+		$("#full_name, #user_email, #contact_message").on("focusout blur input", function() {
+			$(this).removeClass("is-valid").removeClass("is-invalid");
+		});
 	});
+
+	function validateFullName(fullName) {
+		if (fullName == "") {
+			return false;
+		}
+		return true;
+	}
+
+	function validateEmail(email) {
+		if (email == "") {
+			return false;
+		}
+		return true;
+	}
+
+	function validateMessage(message) {
+		if (message == "") {
+			return false;
+		}
+		return true;
+	}
 
 	// Initialize functions after elements are loaded.
 	$(window).load(function() {

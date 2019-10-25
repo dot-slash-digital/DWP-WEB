@@ -26,6 +26,7 @@
         <!-- Definity CSS -->
         <link rel="stylesheet" href="template_assets/assets/styles/main.css">
         <link rel="stylesheet" href="template_assets/assets/styles/responsive.css">
+        <link rel="stylesheet" href="common.css">
 
         <!-- JS -->
         <script src="modernizr-2.8.3.min.js"></script>
@@ -131,7 +132,7 @@
 
                     <div class="form-group col-md-6 col-sm-12">
                       <input type="text" id="full_name" name="Name" class="form-control" placeholder="Enter your name">
-                      <label for="username-login-1">Full Name</label>
+                      <label for="username-login-1">Full Name*</label>
                     </div>
                     <!--Phone Number-->
                     <div class="form-group col-md-6 col-sm-12">
@@ -142,16 +143,16 @@
                   <!--Email-->
                   <div class="form-group">
                     <input type="email" id="user_email" name="email" class="form-control" placeholder="Enter your email">
-                    <label for="pass-login-1">Email</label>
+                    <label for="pass-login-1">Email*</label>
                   </div>
                   <!-- Message -->
                   <div class="form-group">
                     <textarea name="Message" id="contact_message" class="form-control" rows="5" placeholder="Enter your Message"></textarea>
-                    <label for="message-contact-1">Message</label>
+                    <label for="message-contact-1">Message*</label>
                   </div>
 
                 <!-- Submit -->
-                <input type="submit" id="submit_button" value="Submit" class="btn" disabled="true">
+                <input type="submit" id="submit_button" value="Submit" class="btn">
               </fieldset>
                 </form>
               </div>
@@ -184,26 +185,46 @@
                       <!-- Phone -->
                       <div class="col-sm-4 address-group" style="margin-bottom: 30px;">
                         <span style="text-align: center">Phone</span>
-                        <a href="#" style="text-align: center">+ 123 4567 890</a>
-                        <a href="#" style="text-align: center">+ 123 7654 098</a>
+                        <a href="#" style="text-align: center">(702) 367-7133</a>
                       </div>
 
                       <!-- Address -->
                       <div class="col-sm-4 address-group" style="margin-bottom: 30px;">
                         <span style="text-align: center">Address</span>
-                        <p style="text-align: center">1200 some street, il, US</p>
+                        <p style="text-align: center">7884 W Sahara Ave #100</p>
+                        <p style="text-align: center">Las Vegas, NV 89117</p>
                       </div>
 
                       <!-- Hours -->
                       <div class="col-sm-4 address-group" style="margin-bottom: 30px;">
                         <span style="text-align: center">Open Hours</span>
                         <div style="max-width: 150px; margin: 0 auto;">
-                          <div style="display: inline-block">Mon-Fri:</div>
-                          <div style="float: right;">9am-5pm</div>
+                          <div style="display: inline-block">Mon:</div>
+                          <div style="float: right;">7am-6pm</div>
+                        </div>
+                        <div style="max-width: 150px; margin: 0 auto;">
+                          <div style="display: inline-block">Tue:</div>
+                          <div style="float: right;">7am-6pm</div>
+                        </div>
+                        <div style="max-width: 150px; margin: 0 auto;">
+                          <div style="display: inline-block">Wed:</div>
+                          <div style="float: right;">7am-6pm</div>
+                        </div>
+                        <div style="max-width: 150px; margin: 0 auto;">
+                          <div style="display: inline-block">Thu:</div>
+                          <div style="float: right;">7am-3pm</div>
+                        </div>
+                        <div style="max-width: 150px; margin: 0 auto;">
+                          <div style="display: inline-block">Fri:</div>
+                          <div style="float: right;">Closed</div>
                         </div>
                         <div style="max-width: 150px; margin: 0 auto;">
                           <div style="display: inline-block">Sat:</div>
-                          <div style="float: right;">10am-1pm</div>
+                          <div style="float: right;">Closed</div>
+                        </div>
+                        <div style="max-width: 150px; margin: 0 auto;">
+                          <div style="display: inline-block">Sun:</div>
+                          <div style="float: right;">Closed</div>
                         </div>
                       </div>
                     </div><!-- / .row -->
@@ -275,23 +296,5 @@
 
         <!-- Definity JS -->
         <script src="main.js"></script>
-
-        <script>
-          function validateContactForm() {
-            if ($("#full_name").val() != "" &&
-              $("#phone_number").val() != "" &&
-              $("#user_email").val() != "" &&
-              $("#contact_message").val() != "") {
-              $("#submit_button").prop("disabled", false);
-            }
-            else {
-              $("#submit_button").prop("disabled", true);
-            }
-          }
-
-          $(document).ready(function() {
-            $("input,textarea").on("focusout blur input", validateContactForm);
-          });
-        </script>
     </body>
 </html>

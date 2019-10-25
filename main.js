@@ -40,9 +40,7 @@
 			let message = $("#contact_message");
 
 			// Validate input
-			if (!validateFullName(fullName.val()) ||
-				!validateEmail(email.val()) ||
-				!validateMessage(message.val())) {
+			if (!validateInput()) {
 				e.preventDefault();
 				alert("Please fill out all required fields.");
 			}
@@ -74,8 +72,29 @@
 
 		$("#full_name, #user_email, #contact_message").on("focusout blur input", function() {
 			$(this).removeClass("is-valid").removeClass("is-invalid");
+
+			let submit = $("#submit_button");
+			if (validateInput()) {
+				submit.removeAttr("disabled");
+			}
+			else {
+				submit.attr("disabled");
+			}
 		});
 	});
+
+	function validateInput() {
+		let fullName = $("#full_name");
+		let email = $("#user_email");
+		let message = $("#contact_message");
+
+		if (!validateFullName(fullName.val()) ||
+			!validateEmail(email.val()) ||
+			!validateMessage(message.val())) {
+			return false;
+		}
+		return true;
+	}
 
 	function validateFullName(fullName) {
 		if (fullName == "") {

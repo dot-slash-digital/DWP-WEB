@@ -5,3 +5,8 @@
 .is-invalid {
     border-color: red;
 }
+
+#submit_button.disable {
+    background: rgb(105, 105, 105);
+    cursor: not-allowed;
+}

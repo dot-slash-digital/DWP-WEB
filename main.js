@@ -34,48 +34,63 @@
 			});
 		}
 
-		$("#submit_button").click(function(e) {
-			let fullName = $("#full_name");
-			let email = $("#user_email");
-			let message = $("#contact_message");
+		let submit = $("#submit_button");
+		let fullName = $("#full_name");
+		let email = $("#user_email");
+		let message = $("#contact_message");
 
-			// Validate input
-			if (!validateFullName(fullName.val()) ||
-				!validateEmail(email.val()) ||
-				!validateMessage(message.val())) {
+		submit.click(function(e) {
+			if (submit.hasClass("disable")) {
 				e.preventDefault();
 				alert("Please fill out all required fields.");
-			}
 
-			// Full name is required
-			if (validateFullName(fullName.val())) {
-				fullName.removeClass("is-invalid").addClass("is-valid");
-			}
-			else {
-				fullName.removeClass("is-valid").addClass("is-invalid");
-			}
+				if (validateFullName(fullName.val())) {
+					fullName.addClass("is-valid").removeClass("is-invalid");
+				}
+				else {
+					fullName.addClass("is-invalid").removeClass("is-valid");
+				}
 
-			// Email is required
-			if (validateEmail(email.val())) {
-				email.removeClass("is-invalid").addClass("is-valid");
-			}
-			else {
-				email.removeClass("is-valid").addClass("is-invalid");
-			}
+				if (validateEmail(email.val())) {
+					email.addClass("is-valid").removeClass("is-invalid");
+				}
+				else {
+					email.addClass("is-invalid").removeClass("is-valid");
+				}
 
-			// Message is required
-			if (validateMessage(message.val())) {
-				message.removeClass("is-invalid").addClass("is-valid");
-			}
-			else {
-				message.removeClass("is-valid").addClass("is-invalid");
+				if (validateMessage(message.val())) {
+					message.addClass("is-valid").removeClass("is-invalid");
+				}
+				else {
+					message.addClass("is-invalid").removeClass("is-valid");
+				}
 			}
 		});
 
-		$("#full_name, #user_email, #contact_message").on("focusout blur input", function() {
-			$(this).removeClass("is-valid").removeClass("is-invalid");
+		$("#full_name, #user_email, #contact_message").on("input", function() {
+			$(this).removeClass("is-valid is-invalid");
+
+			if (validateInput()) {
+				submit.removeClass("disable");
+			}
+			else {
+				submit.addClass("disable");
+			}
 		});
 	});
+
+	function validateInput() {
+		let fullName = $("#full_name");
+		let email = $("#user_email");
+		let message = $("#contact_message");
+
+		if (!validateFullName(fullName.val()) ||
+			!validateEmail(email.val()) ||
+			!validateMessage(message.val())) {
+			return false;
+		}
+		return true;
+	}
 
 	function validateFullName(fullName) {
 		if (fullName == "") {
@@ -85,10 +100,8 @@
 	}
 
 	function validateEmail(email) {
-		if (email == "") {
-			return false;
-		}
-		return true;
+		let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    	return re.test(String(email).toLowerCase());
 	}
 
 	function validateMessage(message) {

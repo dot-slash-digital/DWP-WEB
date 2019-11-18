@@ -4,12 +4,19 @@
 .alignright {
 	float: right;
 }
+@media screen and (max-width: 992px){
+	.about-hours{
+	    padding-top: 5px;
+	}
+}
 
 .about-hours{
    background: rgba(17, 17, 17, 0.93);
    color: white;
    height: 300px;
-   width:300px
+   width:300px;
+	 margin-left: 50px;
+
 }
 #textbox{
   height:35px;

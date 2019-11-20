@@ -1,15 +1,3 @@
-.is-valid {
-    border-color: green;
-}
-
-.is-invalid {
-    border-color: red;
-}
-
-#submit_button.disable {
-    background: rgb(105, 105, 105);
-    cursor: not-allowed;
-}
 
 @media screen and (min-width: 992px) {
 	.p-1{

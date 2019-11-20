@@ -10,3 +10,21 @@
     background: rgb(105, 105, 105);
     cursor: not-allowed;
 }
+
+.contact-container{
+	padding-top: 50px;
+	padding-bottom: 50px
+}
+@media only screen and (min-width: 400px) {
+  .contact-form-container{
+  	padding-top:25px;
+  	padding-bottom:25px;
+  	position: relative;
+  	left: 50%;
+  	transform: translateX(-50%); width: 60%;
+  }
+}
+@media only screen and (max-width: 400px) {
+    .contact-form-container{
+    }
+}

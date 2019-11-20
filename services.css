@@ -1,0 +1,17 @@
+#contact-us-btn-break {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-us-btn {
+        width: 200px;
+    }
+
+    .contact-us-btn:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    #contact-us-btn-break {
+        display: block;
+    }
+}

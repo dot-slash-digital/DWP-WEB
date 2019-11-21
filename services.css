@@ -1,29 +1,23 @@
-.is-valid {
-    border-color: green;
-}
-
-.is-invalid {
-    border-color: red;
-}
-
-#submit_button.disable {
-    background: rgb(105, 105, 105);
-    cursor: not-allowed;
-}
-
-.menu-item {
-  text-align: right;
+#contact-us-btn-break {
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  .show-map-link {
-    margin-top: 40px;
-  }
+    .contact-us-btn {
+        width: 200px;
+    }
+
+    .contact-us-btn:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    #contact-us-btn-break {
+        display: block;
+    }
 }
-  
-.contact-info-wrapper {
-  width: 800px;
-  max-width: 90%;
+
+.menu-item {
+    text-align: right;
 }
 
 @media screen and (min-width: 992px) {

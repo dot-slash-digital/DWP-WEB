@@ -1,14 +1,23 @@
-.is-valid {
-    border-color: green;
+#contact-us-btn-break {
+    display: none;
 }
 
-.is-invalid {
-    border-color: red;
+@media only screen and (max-width: 768px) {
+    .contact-us-btn {
+        width: 200px;
+    }
+
+    .contact-us-btn:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    #contact-us-btn-break {
+        display: block;
+    }
 }
 
-#submit_button.disable {
-    background: rgb(105, 105, 105);
-    cursor: not-allowed;
+.menu-item {
+    text-align: right;
 }
 
 @media screen and (min-width: 992px) {
@@ -101,35 +110,5 @@
   .p-5{
           display:none;
           text-align:center
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .show-map-link {
-      margin-top: 40px;
-    }
-  }
-
-  .contact-info-wrapper {
-    width: 800px;
-    max-width: 90%;
-  }
-}
-
-.contact-container{
-	padding-top: 50px;
-	padding-bottom: 50px
-}
-@media only screen and (min-width: 400px) {
-  .contact-form-container{
-  	padding-top:25px;
-  	padding-bottom:25px;
-  	position: relative;
-  	left: 50%;
-  	transform: translateX(-50%); width: 60%;
-  }
-}
-@media only screen and (max-width: 400px) {
-    .contact-form-container{
     }
 }

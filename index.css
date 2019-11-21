@@ -160,19 +160,21 @@
 		float: right;
 		width: 70%;
 	}
-	.column-for-600-img-hg {
-		float: left;
-		width: 50%;
-	}
-	.column-for-600-text-hg {
-		float: right;
-		width: 50%;
-	}
 
 	.row-for-600:after {
 	  content: "";
 	  display: table;
 	  clear: both;
+	}
+
+}
+
+
+@media screen and (max-width: 460px) {
+	.column-for-600-text {
+		float: right;
+		padding-left: 50px;
+		width: 70%;
 	}
 
 }

@@ -29,3 +29,7 @@
     transform: translate(-50%, -50%);
     position: absolute;
 }
+
+.menu-item {
+  text-align: right;
+}

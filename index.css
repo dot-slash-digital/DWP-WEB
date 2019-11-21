@@ -36,15 +36,24 @@
     transform: translate(-50%, -50%);
     position: absolute;
 }
+.jumbo-padding{
+	padding-left:75px;
+}
 
 @media screen and (max-width: 992px) and (min-width: 600px){
 	.jumbotron-paragraph{
 		font-size: 24px;
 		width: 50%;
 	}
+	.jumbo-padding{
+		padding-left:75px;
+	}
 }
 
 @media screen and (max-width: 600px) {
+	.jumbo-padding{
+		padding-left:0px;
+	}
 	.jumbotron-paragraph{
 		text-align: center;
 	}

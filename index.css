@@ -30,8 +30,16 @@
     position: absolute;
 }
 
+@media only screen and (max-width: 768px) {
+  .show-map-link {
+    margin-top: 40px;
+  }
+}
 
-
+.contact-info-wrapper {
+  width: 800px;
+  max-width: 90%;
+}
 @media screen and (min-width: 1200px) {
 	.testimonial-responsive{
 		width: 33.33%

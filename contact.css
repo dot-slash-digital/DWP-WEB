@@ -11,9 +11,6 @@
     cursor: not-allowed;
 }
 
-<<<<<<< HEAD
-=======
-
 .contact-container{
 	padding-top: 50px;
 	padding-bottom: 50px
@@ -42,8 +39,7 @@
     width: 800px;
     max-width: 90%;
   }
-=======
->>>>>>> f58de7dd61ed690f72a1a9ab124087d5ebc8579c
+
 @media screen and (min-width: 992px) {
 	.p-1{
         display:block;
@@ -136,7 +132,6 @@
           text-align:center
     }
 }
-<<<<<<< HEAD
 
 @media only screen and (max-width: 768px) {
     .show-map-link {
@@ -167,5 +162,3 @@
     .contact-form-container{
     }
 }
-=======
->>>>>>> f58de7dd61ed690f72a1a9ab124087d5ebc8579c

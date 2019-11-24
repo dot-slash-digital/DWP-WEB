@@ -4,6 +4,16 @@
 .alignright {
 	float: right;
 }
+@media screen and (max-width: 1260px){
+	.about-big-container{
+			display:none;
+			text-align:center
+	}
+	.about-small-container{
+			display:block;
+			text-align:center
+	}
+}
 @media screen and (max-width: 992px){
 	.about-hours{
 	    padding-top: 5px;
@@ -38,6 +48,18 @@
 }
 .jumbo-padding{
 	padding-left:75px;
+}
+
+
+@media screen and (min-width: 1260px) {
+		.about-big-container{
+				display:block;
+				text-align:center
+		}
+		.about-small-container{
+				display:none;
+				text-align:center
+		}
 }
 
 @media screen and (max-width: 992px) and (min-width: 600px){

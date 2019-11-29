@@ -10,8 +10,11 @@
 			text-align:center
 	}
 	.about-small-container{
-			display:block;
-			text-align:center
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 60%;
+}
 	}
 }
 @media screen and (max-width: 992px){
@@ -51,14 +54,14 @@
 }
 
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 1261px) {
 		.about-big-container{
 				display:block;
 				text-align:center
 		}
 		.about-small-container{
 				display:none;
-				text-align:center
+				text-align:
 		}
 }
 
@@ -317,6 +320,16 @@
           display:none;
           text-align:center
     }
+}
+
+@media screen and (max-width: 992px){
+	.about-hours{
+	   background: rgba(17, 17, 17, 0.93);
+	   color: white;
+	   height: 300px;
+	   width:300px;
+
+	}
 }
 
 @media screen and (max-width: 450px){

@@ -9,7 +9,7 @@
         font-size: 24px;
 		width: 50%;
 	}
-    
+
 	.jumbo-padding {
 		padding-left: 75px;
 	}
@@ -19,11 +19,11 @@
 	.jumbo-padding {
 		padding-left: 0px;
 	}
-    
+
 	.jumbotron-paragraph, text-align {
         text-align: center;
 	}
-    
+
 	.btn-center {
 		display: block !important;
 		margin: 0 auto;
@@ -58,6 +58,7 @@
 
 #about .row:nth-child(1) h2 {
     text-align: center;
+		padding-bottom: 25px;
 }
 
 #about-hours, #about h3 {
@@ -69,26 +70,26 @@
         width: 66.667%;
         float: left;
     }
-    
+
     #about > .row:nth-child(2) > .col:nth-child(2) {
-        width: 33.333%;
+        width: 30%;
         float: right;
     }
 }
 
-@media (min-width: 1261px) {    
+@media (min-width: 1261px) {
     #about > .row:nth-child(2) > .col:nth-child(1) > .row {
         display: flex;
     }
-    
+
     #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col {
         width: 50%;
     }
-    
+
     #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col:nth-child(1) {
         order: 2;
     }
-    
+
     #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col:nth-child(2) {
         order: 1;
     }
@@ -98,22 +99,65 @@
     #about > .row:nth-child(2) > .col:nth-child(1) > .row {
         display: block;
     }
-    
+
     #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col {
         width: 100%;
     }
+	 .about-text-style{
+			width: 90%;
+			padding-left: 25px;
+			padding-bottom: 10px
+		}
+		.about-header-style{
+				padding-left: 25px;
+		}
+
 }
 
-@media (max-width: 799px) {    
+@media (min-width: 800px) and (max-width: 992px) {
+	  .about-header-style{
+				padding-left: 10px;
+		}
+
+    .about-text-style{
+			width: 95%;
+			font-size: small;
+			padding-left: 10px
+    }
+}
+
+@media (max-width: 270px) {
+	.about-header-style{
+			padding-left: 10px;
+	}
+
+	.about-text-style{
+		width: 95%;
+		font-size: small;
+		padding-left: 10px
+	}
+}
+@media (min-width: 270px) and (max-width: 799px) {
+	.about-text-style{
+		 width: 95%;
+		 padding-left: 25px;
+		 padding-bottom: 10px
+	 }
+	 .about-header-style{
+			 padding-left: 25px;
+	 }
+}
+@media (max-width: 799px) {
     #about > .row,
     #about > .row:nth-child(2) > .col:nth-child(1) > .row {
         display: block;
     }
-    
+
     #about > .row:nth-child(2) > .col,
     #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col {
         width: 100%;
     }
+
 }
 
 /* ----------------------------------- */
@@ -152,27 +196,27 @@
 	.testimonial-responsive {
 		width: 33.33%;
 	}
-    
+
 	.img-logo-testimonial, .img-logo-testimonial-hg-1 {
 		display: block;
 		margin: 0 auto 40px auto;
 		height: 64px;
 	}
-	
+
     .img-logo-testimonial-hg-2 {
 		display: none;
 		margin: 0 auto 40px auto;
 		height: 64px;
 	}
-    
+
     .name-1 {
         display: none;
 	}
-    
+
     .name-2 {
         display: block;
     }
-    
+
     .name-1, .name-2, .paragraph-testimonial {
         text-align: center;
     }
@@ -182,33 +226,33 @@
 	.testimonial-responsive {
 		width: 50%;
 	}
-	
+
     .row-flex-wrap {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
 	}
-	
+
     .img-logo-testimonial, .img-logo-testimonial-hg-1 {
 		display: block;
 		margin: 0 auto 40px auto;
 		height: 64px;
 	}
-	
+
     .img-logo-testimonial-hg-2 {
 		display: none;
 		margin: 0 auto 40px auto;
 		height: 64px;
 	}
-    
+
     .name-1 {
         display: none;
     }
-    
+
     .name-2 {
         display: block;
     }
-    
+
     .name-1, .name-2, .paragraph-testimonial {
         text-align: center;
     }
@@ -218,7 +262,7 @@
 	.testimonial-responsive {
 		width: 100%;
 	}
-    
+
 	.img-logo-testimonial {
 		height: 64px;
 		margin-bottom: 25px;
@@ -227,7 +271,7 @@
 		top: 50%;
 		transform: translate(0%, -50%);
 	}
-    
+
 	.img-logo-testimonial-hg-1{
 		height: 64px;
 		margin-bottom: 25px;
@@ -255,7 +299,7 @@
         display: none;
         text-align: center;
     }
-    
+
     .name-1 {
         margin-top: 0px !important;
         margin-bottom: 10px !important;
@@ -265,7 +309,7 @@
         float: left;
         width: 30%;
 	}
-    
+
 	.column-for-600-text {
         float: right;
 		width: 70%;
@@ -292,7 +336,7 @@
         display: block;
         text-align: center;
     }
-    
+
     .p-2, .p-3, .p-4 {
         display: none;
         text-align: center;
@@ -304,12 +348,12 @@
         display: none;
         text-align: center;
     }
-    
+
     .p-2, .p-3 {
         display: block;
         text-align: left;
     }
-    
+
     .p-5 {
         display: block;
         text-align: center;
@@ -332,7 +376,7 @@
         display: none;
         text-align: center;
     }
-    
+
     .p-2, .p-3, .p-4 {
         display: block;
         text-align: center;

@@ -32,6 +32,10 @@
 
 /* About */
 
+#about .row {
+    margin: 0;
+}
+
 #about-hours {
     background: #222222;
 }
@@ -52,32 +56,19 @@
     text-align: right;
 }
 
-#about > .row .row {
-    margin: 0;
-}
-
 #about .row:nth-child(1) h2 {
     text-align: center;
-		padding-bottom: 25px;
 }
 
 #about-hours, #about h3 {
     color: white;
 }
 
-@media (min-width: 800px) {
-    #about > .row:nth-child(2) > .col:nth-child(1) {
-        width: 66.667%;
-        float: left;
-    }
-
-    #about > .row:nth-child(2) > .col:nth-child(2) {
-        width: 30%;
-        float: right;
-    }
+#about > .row:nth-child(1) > h2 {
+    margin-bottom: 60px;
 }
 
-@media (min-width: 1261px) {
+@media (min-width: 1200px) {
     #about > .row:nth-child(2) > .col:nth-child(1) > .row {
         display: flex;
     }
@@ -87,15 +78,35 @@
     }
 
     #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col:nth-child(1) {
+        margin-left: 8.11%;
         order: 2;
     }
 
     #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col:nth-child(2) {
         order: 1;
     }
+    
+    .about-header-style {
+        margin: 5px 50px !important;
+    }
+    
+    .about-text-style {
+        margin: 5px 50px 15px 50px !important;
+    }
+    
+    #about > .row:nth-child(2) > .col:nth-child(1) {
+        width: 64.167%;
+        float: left;
+        margin-right: 5%;
+    }
+
+    #about > .row:nth-child(2) > .col:nth-child(2) {
+        width: 30.833%;
+        float: right;
+    }
 }
 
-@media (min-width: 800px) and (max-width: 1260px) {
+@media (min-width: 800px) and (max-width: 1199px) {
     #about > .row:nth-child(2) > .col:nth-child(1) > .row {
         display: block;
     }
@@ -103,50 +114,28 @@
     #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col {
         width: 100%;
     }
-	 .about-text-style{
-			width: 90%;
-			padding-left: 25px;
-			padding-bottom: 10px
-		}
-		.about-header-style{
-				padding-left: 25px;
-		}
+    
+    #about-hours .row {
+        margin: 0 20px;
+    }
+    
+    #about img {
+        width: 80%;
+        margin: 0 10%;
+    }
+    
+    #about > .row:nth-child(2) > .col:nth-child(1) {
+        width: 55%;
+        float: left;
+        margin-right: 5%;
+    }
 
-}
-
-@media (min-width: 800px) and (max-width: 992px) {
-	  .about-header-style{
-				padding-left: 10px;
-		}
-
-    .about-text-style{
-			width: 95%;
-			font-size: small;
-			padding-left: 10px
+    #about > .row:nth-child(2) > .col:nth-child(2) {
+        width: 40%;
+        float: right;
     }
 }
 
-@media (max-width: 270px) {
-	.about-header-style{
-			padding-left: 10px;
-	}
-
-	.about-text-style{
-		width: 95%;
-		font-size: small;
-		padding-left: 10px
-	}
-}
-@media (min-width: 270px) and (max-width: 799px) {
-	.about-text-style{
-		 width: 95%;
-		 padding-left: 25px;
-		 padding-bottom: 10px
-	 }
-	 .about-header-style{
-			 padding-left: 25px;
-	 }
-}
 @media (max-width: 799px) {
     #about > .row,
     #about > .row:nth-child(2) > .col:nth-child(1) > .row {
@@ -154,10 +143,85 @@
     }
 
     #about > .row:nth-child(2) > .col,
-    #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col {
+    #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col:nth-child(1) {
         width: 100%;
     }
+    
+    #about .row:nth-child(1) h2, .about-header-style {
+        padding: 0;
+    }
+    
+    .about-header-style h3 {
+        text-align: center;
+    }
+    
+    #about-hours .row {
+        margin: 0 20px;
+    }
+}
 
+/* About: Image */
+
+@media (min-width: 600px) and (max-width: 799px) {
+    #about img {
+        width: 50%;
+        margin: 0 25%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
+    #about img {
+        width: 75%;
+        margin: 0 12.5%;
+    }
+}
+
+@media (max-width: 399px) {
+    #about img {
+        width: 100%;
+    }
+}
+
+/* About: Description */
+
+@media (min-width: 600px) and (max-width: 799px) {
+    #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col:nth-child(2) {
+        width: 75%;
+        margin: 0 12.5%;
+    }
+}
+
+@media (max-width: 599px) {
+    #about > .row:nth-child(2) > .col:nth-child(1) > .row > .col:nth-child(2) {
+        width: 100%;
+    }
+}
+
+/* About: Hours */
+
+@media (min-width: 500px) and (max-width: 799px) {
+    #about-hours {
+        width: 60% !important;
+        margin: 50px 20% 0 20%;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 499px) {
+    #about-hours {
+        width: 90% !important;
+        margin: 50px 5% 0 5%;
+    }
+}
+
+@media (max-width: 349px) {
+    #about-hours {
+        width: 100% !important;
+        margin-top: 50px;
+    }
+    
+    #about-hours .about-text-style {
+        font-size: 12px;
+    }
 }
 
 /* ----------------------------------- */

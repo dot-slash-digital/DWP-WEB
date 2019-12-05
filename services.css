@@ -112,3 +112,17 @@
           text-align:center
     }
 }
+
+/* Hide preloader on Edge */
+@supports (-ms-ime-align:auto) {
+  .preloader {
+  visibility: hidden;
+}
+}
+
+/* Hide preloader on IE */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.preloader {
+  visibility: hidden;
+}
+}

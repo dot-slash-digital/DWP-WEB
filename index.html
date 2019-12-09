@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="template_assets/assets/styles/vendor/bootstrap.min.css">
 
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="main.css">
+        
         <!-- Fonts -->
         <link rel="stylesheet" href="template_assets/assets/fonts/et-lineicons/css/style.css">
         <link rel="stylesheet" href="template_assets/assets/fonts/linea-font/css/linea-font.css">
@@ -62,7 +64,7 @@
                       </button>
 
                       <!-- Logo -->
-                      <a class="navbar-brand" href="./index.html" style="font-size: 24px; margin-top: 5px;">W.G. Pappas, D.D.S.</a>
+                      <a class="navbar-brand" href="./index.html" style="font-size: 24px; margin-top: 5px">Dr. William Pappas, DDS</a>
                     </div><!-- / .navbar-header -->
 
                     <!-- Navbar Links -->
@@ -70,7 +72,7 @@
                       <ul class="nav navbar-nav" style="float: right; font-size: 16px;">
 
                         <!-- Home -->
-                        <li class="dropdown mega-fw menu-item">
+                        <li class="dropdown mega-fw menu-item active">
                           <a href="index.html" class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
 
                         </li><!-- / Home -->
@@ -83,7 +85,7 @@
                         </li><!-- / Elements -->
 
 
-                        <!-- Pages -->
+                        <!-- Contact -->
                         <li class="dropdown mega-fw menu-item">
                           <a href="contact.html" class="dropdown-toggle" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
 
@@ -104,20 +106,21 @@
 
                 <!-- ========== Beginning ========== -->
 
-                  <div class="row section"
-                    style="background-image: url(https://images.unsplash.com/photo-1546189128-3321494b8a85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
-                           background-position-y: center;
-                           background-size: cover">
+        
+                <!-- https://images.unsplash.com/photo-1546189128-3321494b8a85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80 -->
+                  <div id="jumbotron" class="row section" style="background-image: url('jumbotron.jpg'); background-position-y: center; background-size: cover">
 
                     <div class="col-md-offset-1 col-md-5 jumbo-padding">
                       <h2 style="font-size: 48px" class="title-paragraph">Family Dentistry</h2>
 
                       <div style="font-size: 24px" class="jumbotron-paragraph">
-                        <p>Give your smile the care it deserves</p>
+                        <p>Give your smile the care it deserves!</p>
                       </div>
                       <br/>
 
-                      <a href="tel:702-367-7133"><button type="button" class="btn btn-primary btn-center">Call Now</button></a>
+                      <a href="tel:702-367-7133">
+                          <button type="button" class="btn btn-primary btn-center" style="border: none">Call Now</button>
+                        </a>
                     </div>
                   </div><!-- / .row -->
 
@@ -127,13 +130,13 @@
 
                 <section id="about" class="container section">
                     <div class="row">
-                        <h2>About Us</h2>
+                        <h1>About Us</h1>
                     </div>
                     <div class="row">
                         <div class="col">
                             <div class="row">
                                 <div class="col">
-                                    <img src="https://via.placeholder.com/350x400" alt="placeholder">
+                                    <img src="headshot.jpg" alt="placeholder">
                                 </div>
                                 <div class="col">
                                     <h2>W.G. Pappas, D.D.S.</h2>
@@ -171,10 +174,10 @@
 
         <!-- ========== Services ========== -->
 
-        <div class="gray-bg">
+        <div id="services">
           <section class="container ft-cards">
             <div class="row section" style="padding-top: 75px;">
-                <h1 style="text-align:center; height: 75px">Our Services</h1>
+                <h1 style="text-align:center; height: 75px">Our Dental Services</h1>
                 <div style="height:60px"><p class="service-paragraph">
                    Stuff about services 1. Stuff about services 1.Stuff about services 1.Stuff about services 1.
                   Stuff about services 1.Stuff about services 1.Stuff about services 1.Stuff about services 1.
@@ -182,7 +185,7 @@
               </div>
 
               <!-- Item 1 -->
-                <div onclick="location.href='services.html#service-1';" style="cursor:pointer;">
+                <div class="card" onclick="location.href='services.html#service-1';" style="cursor:pointer;">
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="ft-item">
                   <span class="linea-basic-pencil-ruler"></span>
@@ -194,7 +197,7 @@
               </div>
 
               <!-- Item 2 -->
-                <div onclick="location.href='services.html#service-2';" style="cursor:pointer;">
+                <div class="card" onclick="location.href='services.html#service-2';" style="cursor:pointer;">
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="ft-item">
                   <span class="linea-basic-cards-diamonds"></span>
@@ -205,7 +208,7 @@
               </div>
             </div>
               <!-- Item 3 -->
-                <div onclick="location.href='services.html#service-3';" style="cursor:pointer;">
+                <div class="card" onclick="location.href='services.html#service-3';" style="cursor:pointer;">
               <div class="col-lg-4 col-md-6 mb-sm-50">
                 <div class="ft-item">
                   <span class="linea-basic-star"></span>
@@ -217,17 +220,21 @@
               </div>
 
           </section>
-        </div><!-- / .gray-bg -->
-</div>
-
-<!-- Submit -->
-<form action="services.html" class="gray-bg">
+              
+              <!-- Submit -->
+<form action="services.html">
   <input type="submit" value="View More Services" class="btn" style="display: block; margin: 0 auto;">
 </form>
+        </div><!-- / .gray-bg -->
+            
+            
+</div>
 
-          <!-- ========== Testimonial========== -->
 
-          <div class="gray-bg">
+
+          <!-- ========== Testimonials ========== -->
+
+          <div id="testimonials" class="gray-bg">
             <section class="container ft-cards">
               <h1 style="text-align:center; height:75px; padding-top:50px">Testimonials</h1>
               <div class="row section row-flex-wrap" >
@@ -266,9 +273,9 @@
                     <div class="row-for-600">
                      <div class="column-for-600-img">  <img src="facebook.png" class="img-logo-testimonial"> </div>
                      <div class="column-for-600-text">
-                       <h4 class="name-1">Diana S</h4>
+                       <h4 class="name-1">Diana S.</h4>
                        <p class="paragraph-testimonial">He has taken care of my family through preventive care and emergencies. Highly professional and very gentle! I love going in knowing that the pleasant staff is the same. To me it as if they are like a family that you get to visit.</p>
-                       <h4 class="name-2">Diana S</h4>
+                       <h4 class="name-2">Diana S.</h4>
                      </div>
                    </div>
                   </div>
@@ -315,35 +322,42 @@
 
                       <!-- Hours -->
                       <div class="col-sm-4 address-group" style="margin-bottom: 30px;">
-                        <span style="text-align: center">Open Hours</span>
-                        <div style="max-width: 150px; margin: 0 auto;">
-                          <div style="display: inline-block">Mon:</div>
-                          <div style="float: right;">7am-6pm</div>
-                        </div>
-                        <div style="max-width: 150px; margin: 0 auto;">
-                          <div style="display: inline-block">Tue:</div>
-                          <div style="float: right;">7am-6pm</div>
-                        </div>
-                        <div style="max-width: 150px; margin: 0 auto;">
-                          <div style="display: inline-block">Wed:</div>
-                          <div style="float: right;">7am-6pm</div>
-                        </div>
-                        <div style="max-width: 150px; margin: 0 auto;">
-                          <div style="display: inline-block">Thu:</div>
-                          <div style="float: right;">7am-3pm</div>
-                        </div>
-                        <div style="max-width: 150px; margin: 0 auto;">
-                          <div style="display: inline-block">Fri:</div>
-                          <div style="float: right;">Closed</div>
-                        </div>
-                        <div style="max-width: 150px; margin: 0 auto;">
-                          <div style="display: inline-block">Sat:</div>
-                          <div style="float: right;">Closed</div>
-                        </div>
-                        <div style="max-width: 150px; margin: 0 auto;">
-                          <div style="display: inline-block">Sun:</div>
-                          <div style="float: right;">Closed</div>
-                        </div>
+                          <span style="text-align: center">Open Hours</span>
+                          <div style="max-width: 150px; margin: 0 auto;">
+                              <p style="float: left">Mon:</p>
+                              <p style="float: right">7am-6pm</p>
+                          </div>
+                          <div style="clear: both"></div>
+                          <div style="max-width: 150px; margin: 0 auto;">
+                              <p style="float: left">Tue:</p>
+                              <p style="float: right">7am-6pm</p>
+                          </div>
+                          <div style="clear: both"></div>
+                          <div style="max-width: 150px; margin: 0 auto;">
+                              <p style="float: left">Wed:</p>
+                              <p style="float: right">7am-6pm</p>
+                          </div>
+                          <div style="clear: both"></div>
+                          <div style="max-width: 150px; margin: 0 auto;">
+                              <p style="float: left">Thu:</p>
+                              <p style="float: right">7am-3pm</p>
+                          </div>
+                          <div style="clear: both"></div>
+                          <div style="max-width: 150px; margin: 0 auto;">
+                              <p style="float: left">Fri:</p>
+                              <p style="float: right">Closed</p>
+                          </div>
+                          <div style="clear: both"></div>
+                          <div style="max-width: 150px; margin: 0 auto;">
+                              <p style="float: left">Sat:</p>
+                              <p style="float: right">Closed</p>
+                          </div>
+                          <div style="clear: both"></div>
+                          <div style="max-width: 150px; margin: 0 auto;">
+                              <p style="float: left">Sun:</p>
+                              <p style="float: right">Closed</p>
+                          </div>
+                          <div style="clear: both"></div>
                       </div>
                     </div><!-- / .row -->
 
@@ -353,7 +367,9 @@
 
                     <!-- Show Map Button -->
                     <div class="row show-map-link" style="width: 100%; text-align: center; margin-left: -7px">
-                      <a href="#" class="show-map"><span class="icon-map-pin"></span>Show on map</a>
+                      <a href="#" class="show-map">
+                          <button class="btn">Show on map</button>
+                        </a>
                     </div><!-- / .row -->
                   </address>
                 </div><!-- / .contact-info-wrapper -->
@@ -387,8 +403,6 @@
               </div><!-- / .row -->
             </div><!-- / .container -->
           </div><!-- / .copyright -->
-
-        </footer><!-- / .footer-widgets -->
 
 
 

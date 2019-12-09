@@ -1,0 +1,115 @@
+/* Color Scheme */
+
+nav.navbar .navbar-brand,
+#navbar .menu-item:not(.active) a,
+#about h1,
+#about h2,
+#services h1,
+#services h4,
+.ft-cards .ft-item a,
+.ft-cards .ft-item span,
+#testimonials h1,
+#testimonials h4,
+.form-group label {
+    color: #094067 !important;
+}
+
+#navbar .menu-item.active a,
+#navbar .menu-item a:hover {
+    color: #90b4ce !important;
+}
+
+button.navbar-toggle .icon-bar,
+#about-hours {
+    background-color: #094067 !important;
+}
+
+#jumbotron .title-paragraph {
+    color: #fffffe;
+}
+
+#jumbotron .jumbotron-paragraph {
+    color: #90b4ce;
+}
+
+#jumbotron a button,
+.btn-light {
+    background-color: #fffffe !important;
+    color: #094067 !important;
+}
+
+#jumbotron a button:hover,
+.btn-light:hover {
+    background-color: #fffffe !important;
+    color: #3da9fc !important;
+}
+
+#services {
+    background-color: #d8eefe !important;
+}
+
+#about > .row > .col:nth-child(1) p,
+#services p,
+#testimonials p,
+#contact .address-group:nth-child(1) a,
+#contact .address-group:nth-child(2) p,
+#contact .address-group:nth-child(3) p {
+    color: #5f6c7b;
+}
+
+.ft-cards .ft-item a:hover,
+.ft-cards .card:hover a,
+.ft-cards .card:hover a span {
+    color: #3da9fc !important;
+}
+
+#services form input,
+#contact a.show-map button,
+.show-info-link .show-info,
+#submit_button:not(.disable) {
+    background-color: #094067 !important;
+    color: #fffffe !important;
+}
+
+#services form input:hover,
+#contact a.show-map button:hover,
+.show-info-link .show-info:hover,
+#submit_button:not(.disable):hover {
+    background-color: #317fbc !important;
+}
+
+.show-info-link .show-info h6 {
+    color: #fffffe !important;
+}
+
+#contact .address-group > span {
+    color: #094067;
+}
+
+#contact .address-group:nth-child(1) a:hover {
+    color: #3da9fc;
+}
+
+.copyright {
+    background-color: #094067 !important;
+}
+
+.copyright small {
+    color: #90b4ce;
+}
+
+.copyright small a {
+    color: #fffffe !important;
+}
+
+.copyright small a:hover {
+    color: #3da9fc !important;
+}
+
+.pt-dark {
+    background-color: #094067 !important;
+}
+
+.cta-link .bg-overlay {
+    background: rgba(9, 64, 103, 0.5) !important;
+}

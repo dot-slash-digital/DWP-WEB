@@ -113,3 +113,72 @@ button.navbar-toggle .icon-bar,
 .cta-link .bg-overlay {
     background: rgba(9, 64, 103, 0.5) !important;
 }
+
+/* -------------------------------------------------- */
+
+@media (min-width: 992px) {
+    .p-1, p-5 {
+        display: block;
+        text-align: center;
+    }
+    
+    .p-2, .p-3, .p-4 {
+        display: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	.p-1, .p-4 {
+        display: none;
+        text-align: center;
+    }
+    
+    .p-2, .p-3 {
+        display: block;
+        text-align: left;
+    }
+    
+    .p-5 {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 450px) {
+    .p-1, .p-4 {
+        display: block;
+        text-align: center;
+    }
+    
+    .p-2, .p-3, .p-5 {
+        display: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .p-1, .p-5 {
+        display: none;
+        text-align: center;
+    }
+    
+    .p-2, .p-3, .p-4 {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Hide preloader on Edge */
+@supports (-ms-ime-align:auto) {
+    .preloader {
+		visibility: hidden;
+	}
+}
+
+/* Hide preloader on IE */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.preloader {
+		visibility: hidden;
+	}
+}

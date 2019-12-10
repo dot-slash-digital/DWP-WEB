@@ -267,6 +267,10 @@ address {
 }
 
 @media screen and (min-width: 1200px) {
+    #services .ft-item > p {
+        height: 75px;
+    }
+    
 	.testimonial-responsive {
 		width: 33.33%;
 	}

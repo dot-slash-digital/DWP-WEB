@@ -6,8 +6,28 @@
     text-align: right;
 }
 
-.container > .row > .col-lg-3 {
+.container > .row > div {
     padding: 15px;
+}
+
+.blue-bg {
+    background-color: #d8eefe !important;
+}
+
+@media (min-width: 1200px) {
+    .ft-item p {
+        height: 75px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container > .row > div {
+        height: 400px;
+    }
+    
+    .ft-item p {
+        height: 125px;
+    }
 }
 
 @media (max-width: 768px) {

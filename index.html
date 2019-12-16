@@ -89,58 +89,60 @@
         </nav>
 
         <!-- ========== Jumbotron ========== -->
-        <div id="jumbotron" class="row section">
-            <div class="col-md-offset-1 col-md-5 jumbo-padding">
-                <h2 style="font-size: 48px" class="title-paragraph">Family Dentistry</h2>
-                <div style="font-size: 24px" class="jumbotron-paragraph">
+        <div id="jumbotron">
+            <div class="container section">
+                <div class="row">
+                    <h2>Family Dentistry</h2>
                     <p>Give your smile the care it deserves!</p>
+                    <br/>
+                    <a href="https://goo.gl/maps/7UExc4mbfn896t537" target="_blank">
+                        <button type="button" class="btn btn-primary btn-center" style="border: none">Visit Us</button>
+                    </a>
                 </div>
-                <br/>
-                <a href="https://goo.gl/maps/7UExc4mbfn896t537" target="_blank">
-                    <button type="button" class="btn btn-primary btn-center" style="border: none">Visit Us</button>
-                </a>
             </div>
         </div>
         
         <!-- ========== About ============== -->
-        <div id="about" class="container section">
-            <div class="row">
-                <h1>About Us</h1>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="row">
-                        <div class="col">
-                            <img src="headshot.jpg" alt="placeholder">
-                        </div>
-                        <div class="col">
-                            <h2>W.G. Pappas, D.D.S.</h2>
-                            <p style="text-align:center">We offer a full range of dental service to keep your smile healthy. We can perform orthodontics, periodontics, crowns, oral surgery and implant restoration at our office. We work with each of our patients to address all of their dental needs.</p>
-                        </div>
-                    </div>
+        <div id="about">
+            <div class="container section">
+                <div class="row">
+                    <h1>About</h1>
                 </div>
-                <div id="about-hours" class="col">
-                    <div class="row about-header-style">
-                        <h3>Hours</h3>
+                <div class="row">
+                    <div class="col">
+                        <img src="headshot.jpg">
                     </div>
-                    <div class="row about-text-style">
-                        <div id="day-of-week" class="col">
-                            <p>Monday</p>
-                            <p>Tuesday</p>
-                            <p>Wednesday</p>
-                            <p>Thursday</p>
-                            <p>Friday</p>
-                            <p>Saturday</p>
-                            <p>Sunday</p>
-                        </div>
-                        <div id="time-hours" class="col">
-                            <p>7:00 AM - 6:00 PM</p>
-                            <p>7:00 AM - 6:00 PM</p>
-                            <p>7:00 AM - 6:00 PM</p>
-                            <p>7:00 AM - 3:00 PM</p>
-                            <p>Closed</p>
-                            <p>Closed</p>
-                            <p>Closed</p>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h2>W.G. Pappas, D.D.S.</h2>
+                                <p>We offer a full range of dental service to keep your smile healthy. We can perform orthodontics, periodontics, crowns, oral surgery and implant restoration at our office. We work with each of our patients to address all of their dental needs.</p>
+                            </div>
+                            <div id="about-hours" class="col">
+                                <div class="row">
+                                    <h3>Hours</h3>
+                                </div>
+                                <div class="row">
+                                    <div id="day-of-week" class="col">
+                                        <p>Monday</p>
+                                        <p>Tuesday</p>
+                                        <p>Wednesday</p>
+                                        <p>Thursday</p>
+                                        <p>Friday</p>
+                                        <p>Saturday</p>
+                                        <p>Sunday</p>
+                                    </div>
+                                    <div id="time-hours" class="col">
+                                        <p>7:00 AM - 6:00 PM</p>
+                                        <p>7:00 AM - 6:00 PM</p>
+                                        <p>7:00 AM - 6:00 PM</p>
+                                        <p>7:00 AM - 3:00 PM</p>
+                                        <p>Closed</p>
+                                        <p>Closed</p>
+                                        <p>Closed</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,13 +151,14 @@
 
         <!-- ========== Services =========== -->
         <div id="services">
-            <section class="container ft-cards">
-                <div class="row section" style="padding-top: 75px;">
-                    <h1 style="text-align:center; height: 75px">Our Dental Services</h1>
-
-                    <!-- Item 1 -->
-                    <div class="card" onclick="location.href='services.html#service-1';" style="cursor:pointer;">
-                        <div class="col-lg-4 col-md-6 mb-sm-50">
+            <div class="container section">
+                <div class="row">
+                    <h1>Our Dental Services</h1>
+                </div>
+                <div class="row ft-cards">
+                    <!-- Family Dentistry -->
+                    <div class="card" onclick="location.href='services.html#family-dentistry'">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="ft-item">
                                 <span class="linea-basic-pencil-ruler"></span>
                                 <h4>Family Dentistry</h4>
@@ -165,9 +168,9 @@
                         </div>
                     </div>
 
-                    <!-- Item 2 -->
-                    <div class="card" onclick="location.href='services.html#service-2';" style="cursor:pointer;">
-                        <div class="col-lg-4 col-md-6 mb-sm-50">
+                    <!-- Cosmetic Dentistry -->
+                    <div class="card" onclick="location.href='services.html#cosmetic-dentistry'">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="ft-item">
                                 <span class="linea-basic-cards-diamonds"></span>
                                 <h4>Cosmetic Dentistry</h4>
@@ -177,9 +180,9 @@
                         </div>
                     </div>
 
-                    <!-- Item 3 -->
-                    <div class="card" onclick="location.href='services.html#service-3';" style="cursor:pointer;">
-                        <div class="col-lg-4 col-md-6 mb-sm-50">
+                    <!-- Dental Repair -->
+                    <div class="card" onclick="location.href='services.html#dental-repair'">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="ft-item">
                                 <span class="linea-basic-star"></span>
                                 <h4>Dental Repair</h4>
@@ -189,70 +192,75 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            
-            <!-- Submit -->
-            <form action="services.html">
-                <input type="submit" value="View More Services" class="btn" style="display: block; margin: 0 auto;">
-            </form>
+                <div class="row">
+                    <a href="services.html">
+                        <button class="btn">View More Services</button>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <!-- ========== Testimonials ======= -->
-        <div id="testimonials" class="gray-bg">
-            <section class="container ft-cards">
-                <h1 style="text-align:center; height:75px; padding-top:50px">Testimonials</h1>
-                <div class="row section row-flex-wrap">
-                    
-                    <!-- Item 1 -->
-                    <div class="col-lg-4 col-md-6 mb-sm-50 testimonial-responsive">
-                        <div class="ft-item">
-                            <div class="row-for-600">
-                                <div class="column-for-600-img">
-                                    <img src="google.png" class="img-logo-testimonial">
-                                </div>
-                                <div class="column-for-600-text">
-                                    <h4 class="name-1">Scott C.</h4>
-                                    <p class="paragraph-testimonial"> Best. Dentist. Ever. Doctor Pappas is the complete professional, combining personal and technical skills for maximum reassurance. My visits are almost relaxing. And Dr. Pappas has assembled an equally impressive supporting staff!</p>
-                                    <h4 class="name-2">Scott C.</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 2 -->
-                    <div class="col-lg-4 col-md-6 mb-sm-50 testimonial-responsive">
-                        <div class="ft-item">
-                            <div class="row-for-600">
-                                <div class="column-for-600-img">
-                                    <img src="healthgrades.png" class="img-logo-testimonial-hg-1">
-                                    <img src="healthgrade500.png" class="img-logo-testimonial-hg-2">
-                                </div>
-                                <div class="column-for-600-text">
-                                    <h4 class="name-1">Diane M.</h4>
-                                    <p class="paragraph-testimonial">I have been going to Dr. Pappas for 18 years and would never consider going to anyone else. He is an EXCELLENT dentist, does superior work, takes time to listen to you, and is very gentle. He's the BEST in Las Vegas!</p>
-                                    <h4 class="name-2">Diane M.</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 3 -->
-                    <div class="col-lg-4 col-md-6 mb-sm-50 testimonial-responsive">
-                        <div class="ft-item">
-                            <div class="row-for-600">
-                                <div class="column-for-600-img">
-                                    <img src="facebook.png" class="img-logo-testimonial">
-                                </div>
-                                <div class="column-for-600-text">
-                                    <h4 class="name-1">Diana S.</h4>
-                                    <p class="paragraph-testimonial">He has taken care of my family through preventive care and emergencies. Highly professional and very gentle! I love going in knowing that the pleasant staff is the same. To me it as if they are like a family that you get to visit.</p>
-                                    <h4 class="name-2">Diana S.</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div id="testimonials">
+            <div class="container section">
+                <div class="row">
+                    <h1>Testimonials</h1>
                 </div>
-            </section>
+                <div class="row ft-cards">
+                    <!-- Google -->
+                    <div class="card">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="ft-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="google.png">
+                                    </div>
+                                    <div class="col">
+                                        <p>Best. Dentist. Ever. Doctor Pappas is the complete professional, combining personal and technical skills for maximum reassurance. My visits are almost relaxing. And Dr. Pappas has assembled an equally impressive supporting staff!</p>
+                                        <h4>Scott C.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Healthgrades -->
+                    <div class="card">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="ft-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="healthgrades.png">
+                                    </div>
+                                    <div class="col">
+                                        <p>I have been going to Dr. Pappas for 18 years and would never consider going to anyone else. He is an EXCELLENT dentist, does superior work, takes time to listen to you, and is very gentle. He's the BEST in Las Vegas!</p>
+                                        <h4>Diane M.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facebook -->
+                    <div class="card">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="ft-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="facebook.png" class="img-logo-testimonial">
+                                    </div>
+                                    <div class="col">
+                                        <p>He has taken care of my family through preventive care and emergencies. Highly professional and very gentle! I love going in knowing that the pleasant staff is the same. To me it as if they are like a family that you get to visit.</p>
+                                        <h4>Diana S.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="clear: both"></div>
+                </div>
+            </div>
         </div>
         
         <!-- ========== Map ================ -->
@@ -344,18 +352,18 @@
         </section>
         
         <!-- ========== Footer ============= -->
-        <div class="copyright">
-            <div class="container">
+        <div id="footer">
+            <div class="container section">
                 <div class="row">
                     <small class="p-4">
                         <a href="#page-top" class="pull-right to-the-top">To the top<i class="fa fa-angle-up"></i></a>
                     </small>
-                    <div class="col-sm-6">
+                    <div class="col">
                         <small class="p-1">&copy; 2019 W.G. Pappas, D.D.S., built by <a href="http://www.dotslashdigital.com">Dot Slash Digital</a></small>
-                        <small class="p-2">&copy; 2019 W.G. Pappas, D.D.S.,</small>
-                        <small class="p-3">built by <a href="http://www.dotslashdigital.com">Dot Slash Digital</a></small>
+                        <small class="p-2">&copy; 2019 W.G. Pappas, D.D.S.</small>
+                        <small class="p-3">Built by <a href="http://www.dotslashdigital.com">Dot Slash Digital</a></small>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col">
                         <small class="p-5">
                             <a href="#page-top" class="pull-right to-the-top">To the top<i class="fa fa-angle-up"></i></a>
                         </small>

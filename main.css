@@ -24,11 +24,11 @@ button.navbar-toggle .icon-bar,
     background-color: #094067 !important;
 }
 
-#jumbotron .title-paragraph {
+#jumbotron > .container > .row > h2 {
     color: #fffffe;
 }
 
-#jumbotron .jumbotron-paragraph {
+#jumbotron > .container > .row > p {
     color: #90b4ce;
 }
 
@@ -46,6 +46,10 @@ button.navbar-toggle .icon-bar,
 
 #services {
     background-color: #d8eefe !important;
+}
+
+#testimonials {
+    background-color: #f8f8f8;
 }
 
 #about > .row > .col:nth-child(1) p,
@@ -90,19 +94,19 @@ button.navbar-toggle .icon-bar,
     color: #3da9fc;
 }
 
-.copyright {
+#footer {
     background-color: #094067 !important;
 }
 
-.copyright small {
+#footer small {
     color: #90b4ce;
 }
 
-.copyright small a {
+#footer small a {
     color: #fffffe !important;
 }
 
-.copyright small a:hover {
+#footer small a:hover {
     color: #3da9fc !important;
 }
 
@@ -114,60 +118,51 @@ button.navbar-toggle .icon-bar,
     background: rgba(9, 64, 103, 0.5) !important;
 }
 
-/* -------------------------------------------------- */
+/* Footer */
 
-@media (min-width: 992px) {
-    .p-1, p-5 {
-        display: block;
-        text-align: center;
-    }
-    
-    .p-2, .p-3, .p-4 {
-        display: none;
-        text-align: center;
-    }
+#footer .container {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
-	.p-1, .p-4 {
-        display: none;
-        text-align: center;
-    }
-    
-    .p-2, .p-3 {
-        display: block;
+@media (min-width: 768px) {
+    #footer .container .row .col:nth-child(2) {
+        float: left;
         text-align: left;
     }
     
-    .p-5 {
-        display: block;
-        text-align: center;
+    #footer .container .row .col:nth-child(3) {
+        float: right;
+        text-align: right;
+    }
+    
+    #footer .p-2, .p-3, .p-4 {
+        display: none;
     }
 }
 
-@media (max-width: 768px) and (min-width: 450px) {
-    .p-1, .p-4 {
+@media (min-width: 450px) and (max-width: 767px) {
+    #footer .p-1, .p-4 {
+        text-align: center;
+    }
+    
+    #footer .p-2, .p-3, .p-5 {
+        display: none;
+    }
+}
+
+@media (max-width: 449px) {
+    #footer .p-2, .p-3, .p-4 {
         display: block;
         text-align: center;
     }
     
-    .p-2, .p-3, .p-5 {
+    #footer .p-1, .p-5 {
         display: none;
-        text-align: center;
     }
 }
 
-@media (max-width: 450px) {
-    .p-1, .p-5 {
-        display: none;
-        text-align: center;
-    }
-    
-    .p-2, .p-3, .p-4 {
-        display: block;
-        text-align: center;
-    }
-}
+/* -------------------------------------------------- */
 
 /* Hide preloader on Edge */
 @supports (-ms-ime-align:auto) {

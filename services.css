@@ -21,7 +21,9 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .container > .row > div {
+    #family-dentistry .container > .row > div,
+    #cosmetic-dentistry .container > .row > div,
+    #dental-repair .container > .row > div {
         height: 400px;
     }
     

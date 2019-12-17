@@ -10,7 +10,10 @@ nav.navbar .navbar-brand,
 .ft-cards .ft-item span,
 #testimonials h1,
 #testimonials h4,
-.form-group label {
+.form-group label,
+#family-dentistry h1,
+#cosmetic-dentistry h1,
+#dental-repair h1 {
     color: #094067 !important;
 }
 
@@ -163,6 +166,11 @@ button.navbar-toggle .icon-bar,
 }
 
 /* -------------------------------------------------- */
+
+.flaticon {
+    display: block;
+    width: 64px;
+}
 
 /* Hide preloader on Edge */
 @supports (-ms-ime-align:auto) {

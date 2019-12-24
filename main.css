@@ -175,28 +175,36 @@ button.navbar-toggle .icon-bar,
         text-align: right;
     }
     
-    #footer .p-2, .p-3, .p-4 {
+    #footer .p-2,
+    #footer .p-3,
+    #footer .p-4 {
         display: none;
     }
 }
 
 @media (min-width: 450px) and (max-width: 767px) {
-    #footer .p-1, .p-4 {
+    #footer .p-1,
+    #footer .p-4 {
         text-align: center;
     }
     
-    #footer .p-2, .p-3, .p-5 {
+    #footer .p-2,
+    #footer .p-3,
+    #footer .p-5 {
         display: none;
     }
 }
 
 @media (max-width: 449px) {
-    #footer .p-2, .p-3, .p-4 {
+    #footer .p-2,
+    #footer .p-3,
+    #footer .p-4 {
         display: block;
         text-align: center;
     }
     
-    #footer .p-1, .p-5 {
+    #footer .p-1,
+    #footer .p-5 {
         display: none;
     }
 }

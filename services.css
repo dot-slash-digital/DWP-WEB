@@ -2,11 +2,7 @@
     display: none;
 }
 
-.menu-item {
-    text-align: right;
-}
-
-.container > .row > div {
+.services-list > .container > .row > div {
     padding: 15px;
 }
 
@@ -21,9 +17,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    #family-dentistry .container > .row > div,
-    #cosmetic-dentistry .container > .row > div,
-    #dental-repair .container > .row > div {
+    .services-list > .container > .row > div {
         height: 400px;
     }
     

@@ -1241,16 +1241,6 @@ mark {
   background: #cafe48;
 }
 
-::-moz-selection {
-  color: #fff;
-  background: #17DA5B;
-}
-
-::selection {
-  color: #fff;
-  background: #17DA5B;
-}
-
 /* ---- 1.1 Text ---- */
 body, .testimonials-3col .t-item blockquote, .testimonials-3col .t-item .wrapper-404 .content-wrapper .info-wrapper .info-404, .wrapper-404 .content-wrapper .info-wrapper .testimonials-3col .t-item .info-404, .testimonials-3col .t-item .bg-maintenance .content-wrapper .content-inner p, .bg-maintenance .content-wrapper .content-inner .testimonials-3col .t-item p {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;

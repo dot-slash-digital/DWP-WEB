@@ -121,6 +121,42 @@ button.navbar-toggle .icon-bar,
     background: rgba(9, 64, 103, 0.5) !important;
 }
 
+/* Navbar */
+
+.menu-item {
+    text-align: right;
+}
+
+.menu-item.active a {
+    cursor: default;
+}
+
+.navbar .navbar-header .navbar-brand {
+    margin-left: 0;
+}
+
+@media (max-width: 1260px) {
+    #navbar {
+        padding: 0 10px;
+    }
+    
+    .navbar .navbar-collapse .navbar-nav {
+        padding: 0 15px;
+    }
+    
+    .navbar-brand {
+        width: calc(100% - 57px);
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar-brand {
+        margin-top: -1px !important ;
+        line-height: 1.1;
+        height: auto;
+    }
+}
+
 /* Footer */
 
 #footer .container {

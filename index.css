@@ -43,8 +43,13 @@
 
 @media (max-width: 600px) {
     #jumbotron {
-        background-position: left center;
+        background-image: url(jumbotron-mobile.jpg);
         height: calc(100vh - 75px);
+    }
+    
+    #jumbotron > .container {
+        padding-top: 25%;
+        padding-bottom: 0;
     }
     
     #jumbotron h2, #jumbotron p {

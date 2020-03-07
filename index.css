@@ -14,17 +14,24 @@
 /* Jumbotron */
 
 #jumbotron {
-    background-image: url(jumbotron.jpg); /* https://images.unsplash.com/photo-1546189128-3321494b8a85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80 */
+    background-image: url(jumbotron.jpg);
     background-position: center center;
     background-size: cover;
 }
 
-#jumbotron > .container > .row > h2 {
-    font-size: 48px;
+#jumbotron > .container {
+    padding-top: 200px;
+    padding-bottom: 240px;
 }
 
-#jumbotron > .container > .row > p {
-    font-size: 24px;
+#jumbotron h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 1199px) and (min-width: 601px) {
+    #jumbotron > .container > .row {
+        padding-right: 50%;
+    }
 }
 
 @media (max-width: 992px) and (min-width: 600px) {
@@ -32,28 +39,56 @@
         font-size: 24px;
 		width: 50%;
 	}
-
-	.jumbo-padding {
-		padding-left: 75px;
-	}
 }
 
-@media screen and (max-width: 600px) {
-	.jumbo-padding {
-		padding-left: 0px;
-	}
-
-	.jumbotron-paragraph, text-align {
+@media (max-width: 600px) {
+    #jumbotron {
+        background-position: left center;
+        height: calc(100vh - 75px);
+    }
+    
+    #jumbotron h2, #jumbotron p {
         text-align: center;
-	}
-
-	.btn-center {
+    }
+    
+	#jumbotron .btn {
 		display: block !important;
 		margin: 0 auto;
 	}
 }
 
+@media (min-width: 351px) {
+    #jumbotron h2 {
+        font-size: 48px;
+    }
+    
+    #jumbotron p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 350px) {
+    #jumbotron h2 {
+        font-size: 36px;
+    }
+    
+    #jumbotron p {
+        font-size: 20px;
+    }
+}
+
 /* About */
+
+#about h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#about .row:nth-child(2) > .col:nth-child(2) > .row > .col:nth-child(1) p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.75;
+}
 
 #day-of-week {
     float: left;
@@ -69,11 +104,6 @@
 
 #time-hours p {
     text-align: right;
-}
-
-#about .row:nth-child(2) > .col:nth-child(2) > .row > .col:nth-child(1) h2,
-#about .row:nth-child(2) > .col:nth-child(2) > .row > .col:nth-child(1) p {
-    text-align: center;
 }
 
 #about-hours, #about h3 {
@@ -162,6 +192,12 @@
 }
 
 /* About: Description */
+
+@media (min-width: 800px) and (max-width: 991px) {
+    #about h2 {
+        font-size: 26px;
+    }
+}
 
 @media (min-width: 800px) {
     #about .row:nth-child(2) h2 {

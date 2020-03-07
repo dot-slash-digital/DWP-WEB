@@ -135,6 +135,12 @@ button.navbar-toggle .icon-bar,
     margin-left: 0;
 }
 
+@media (min-width: 1261px) {
+    nav .container {
+        padding: 0;
+    }
+}
+
 @media (max-width: 1260px) {
     #navbar {
         padding: 0 10px;
@@ -149,7 +155,33 @@ button.navbar-toggle .icon-bar,
     }
 }
 
-@media (max-width: 360px) {
+@media (min-width: 421px) {
+    .navbar .navbar-header .navbar-brand .first-name-initial {
+        display: none;
+    }
+    
+    .navbar .navbar-header .navbar-brand .first-name-full {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 420px) {
+    .navbar .navbar-header .navbar-brand .first-name-initial {
+        display: inline-block;
+    }
+    
+    .navbar .navbar-header .navbar-brand .first-name-full {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar-brand {
+        font-size: 22px !important;
+    }
+}
+
+@media (max-width: 293px) {
     .navbar-brand {
         margin-top: -1px !important ;
         line-height: 1.1;
@@ -182,7 +214,7 @@ button.navbar-toggle .icon-bar,
     }
 }
 
-@media (min-width: 450px) and (max-width: 767px) {
+@media (min-width: 515px) and (max-width: 767px) {
     #footer .p-1,
     #footer .p-4 {
         text-align: center;
@@ -195,7 +227,7 @@ button.navbar-toggle .icon-bar,
     }
 }
 
-@media (max-width: 449px) {
+@media (max-width: 514px) {
     #footer .p-2,
     #footer .p-3,
     #footer .p-4 {
@@ -206,6 +238,10 @@ button.navbar-toggle .icon-bar,
     #footer .p-1,
     #footer .p-5 {
         display: none;
+    }
+    
+    #footer .p-4 {
+        margin-bottom: 10px;
     }
 }
 

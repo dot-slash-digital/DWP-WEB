@@ -1,0 +1,86 @@
+#contact-us-btn-break {
+    display: none;
+}
+
+.services-list > .container > .row > div {
+    padding: 15px;
+}
+
+.blue-bg {
+    background-color: #d8eefe !important;
+}
+
+@media (min-width: 1200px) {
+    #dental-repair > .container > .row > div:nth-child(2) > .ft-item,
+    #dental-repair > .container > .row > div:nth-child(3) > .ft-item {
+        height: 343px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {    
+    #dental-repair > .container > .row > div:nth-child(2) > .ft-item,
+    #dental-repair > .container > .row > div:nth-child(3) > .ft-item {
+        height: 357px;
+    }
+    
+    #dental-repair > .container > .row > div:nth-child(5) > .ft-item {
+        height: 391px;
+    }
+    
+    #dental-repair > .container > .row > div:nth-child(8) > .ft-item,
+    #dental-repair > .container > .row > div:nth-child(9) > .ft-item {
+        height: 350px;
+    }
+    
+    #dental-repair > .container > .row > div:nth-child(4) > .ft-item p,
+    #dental-repair > .container > .row > div:nth-child(8) > .ft-item p,
+    #dental-repair > .container > .row > div:nth-child(9) > .ft-item p {
+        height: 75px;
+    }
+    
+    #dental-repair > .container > .row > div:nth-child(10) > .ft-item p {
+        height: 100px;
+    }
+    
+    .ft-item p {
+        height: 125px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #cosmetic-dentistry > .container > .row > div:nth-child(2) > .ft-item {
+        height: 366px;
+    }
+    
+    #dental-repair > .container > .row > div:nth-child(3) > .ft-item p {
+        height: 100px;
+    }
+    
+    #dental-repair > .container > .row > div:nth-child(5) > .ft-item {
+        height: 343px;
+    }
+    
+    #dental-repair > .container > .row > div:nth-child(8) > .ft-item {
+        height: 327px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ft-item p {
+        height: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us-btn {
+        width: 200px;
+    }
+
+    .contact-us-btn:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    #contact-us-btn-break {
+        display: block;
+    }
+}

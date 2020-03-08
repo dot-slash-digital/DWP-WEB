@@ -121,6 +121,11 @@ button.navbar-toggle .icon-bar,
     background: rgba(9, 64, 103, 0.5) !important;
 }
 
+.page-title {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 /* Navbar */
 
 .menu-item {
